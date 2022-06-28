@@ -1,5 +1,5 @@
 'use strict'
-
+// OLD SCRIPT
 function game() 
 {   
     let rounds = prompt("How many round do you want?")
