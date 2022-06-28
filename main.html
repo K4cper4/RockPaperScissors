@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPS Game</title>
+  <link rel="stylesheet" href="style-main.css">
+  <script src="script-main.js" defer></script>
+  <script src="https://kit.fontawesome.com/7e42942710.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Rock, Paper & Scissors</div>
+    <div class="choice">
+      <div class="link">
+        <a href="#" id="rock"><i class="fa-solid fa-hand-back-fist"></i></a>
+        <div class="text">Rock</div>
+      </div>
+      <div class="link">
+        <a href="#" id="paper"><i class="fa-solid fa-hand"></i></a>
+        <div class="text">Paper</div>
+      </div>
+      <div class="link">
+        <a href="#" id="scissors"><i class="fa-solid fa-hand-scissors"></i></a>
+        <div class="text">Scissors</div>
+      </div>
+    </div>
+    <div class="result">
+      <div class="result-text">You vs Bot</div>
+      <div class="result-box">0 : 0</div>
+      <div class="score result-text special">Game didn't start!</div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="#"><span class="fa-brands fa-facebook"></span></a>
+    <a href="#"><span class="fa-brands fa-discord"></span></a>
+    <a href="#"><span class="fa-brands fa-github"></span></a>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text"></p>
+        <button id="play-again" class="modal-button">Play again</button>
+        <button id="menu-button" class="modal-button">Menu</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
