@@ -1,0 +1,164 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FCF6F5FF;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #89ABE3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 64px;
+    margin: 50px;
+}
+
+.fa-brands {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.fa-solid {
+    font-size: 100px;
+    padding: 50px 50px 10px 50px;
+}
+
+.fa-solid:hover {
+    transition: 0.2s;
+    color: #DEB887;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Montserrat';
+    padding: 5px;
+    font-weight: 900;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-text {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 0 0 0;
+}
+
+.result-box {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 0 0 0;
+}
+
+.special {
+    color: navy;
+}
+
+/* Modal Properties */
+.modal {
+    display: none;
+    position: fixed;
+    padding: 60% 0 0 0;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+    padding: 1px 10px;
+    background-color: #89ABE3FF;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+    background-color: #FCF6F5FF;
+    margin: auto;
+    padding: 0;
+    border: solid 2px black;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: modal-move;
+    animation-duration: 0.4s;
+}
+
+@keyframes modal-move {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-button {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #FCF6F5FF;
+    padding: 15px 20px 15px 20px;
+    border: solid 2px black;
+    box-shadow: 1px 1px 5px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.modal-title {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.modal-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+}
